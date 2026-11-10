@@ -1,0 +1,1723 @@
+# MASTER WEBSITE DEVELOPMENT PROMPT — CHOICE LAUNDRY SERVICES
+
+## PROJECT OVERVIEW
+
+Act as an expert full-stack web developer, UI/UX designer, database architect, and software engineer.
+
+Build a complete, modern, premium, responsive, and production-ready laundry service website and customer management system for a laundry business named **CHOICE LAUNDRY SERVICES**.
+
+The website must combine a beautiful public-facing business website with a fully functional online booking system, secure customer accounts, WhatsApp communication, order tracking, pickup coordination, customer notifications, and an administrative dashboard for managing the entire laundry business.
+
+The final application must be suitable for real customers, work on mobile phones and desktop computers, and be deployable on Vercel.
+
+Do not create only a landing page, visual mockup, or static demonstration. Implement the frontend, backend, database integration, authentication, booking functionality, customer dashboard, administrator dashboard, and necessary security controls.
+
+If any external service requires credentials, provide the correct configuration instructions and a clear fallback until the credentials are supplied.
+
+Do not invent real business contact details, prices, customer reviews, or business credentials.
+
+==================================================
+1. BUSINESS IDENTITY AND BRANDING
+==================================================
+
+Official business name: CHOICE LAUNDRY SERVICES.
+
+Use this exact business name throughout the website, navigation, footer, booking messages, dashboard, metadata, and customer communications.
+
+Brand positioning:
+Choice Laundry Services provides convenient, professional laundry care for individuals, families, and other customers who want their clothes cleaned, ironed, and professionally finished.
+
+Brand personality:
+- Clean.
+- Professional.
+- Reliable.
+- Modern.
+- Trustworthy.
+- Customer-focused.
+- Convenient.
+- Premium but approachable.
+
+Suggested brand slogan:
+
+"Your Clothes, Our Care."
+
+Alternative homepage headline:
+
+"Fresh Clothes. Exceptional Care. More Time for You."
+
+Supporting brand message:
+
+"Experience convenient laundry care with professional finishing, personalized service, and easy WhatsApp communication. Choose your service, arrange your pickup, and let Choice Laundry Services take care of the rest."
+
+Make all branding, slogans, business descriptions, and contact information easy to edit from a central business settings section.
+
+DESIGN DIRECTION
+
+Create a premium laundry website inspired by the design quality of leading modern service businesses.
+
+Use a sophisticated combination of:
+- Deep navy blue.
+- Fresh turquoise or teal.
+- White.
+- Soft light blue.
+- Subtle neutral grey.
+- Dark charcoal text.
+
+Suggested colours:
+- Primary navy: #142B4A.
+- Secondary teal: #19B8A5.
+- Background: #F8FAFC.
+- White: #FFFFFF.
+- Main text: #1F2937.
+- Muted text: #64748B.
+- Light accent: #EAF7F8.
+
+Use elegant typography, generous spacing, premium laundry photography, subtle shadows, rounded cards, refined icons, and smooth transitions.
+
+Avoid a crowded layout, excessive gradients, oversized decorative elements, and unnecessary interface complexity.
+
+The website should feel like a polished, established laundry brand.
+
+Create a simple professional logo or temporary text-based logo reading CHOICE LAUNDRY SERVICES. Allow the owner to upload the official logo later.
+
+==================================================
+2. COMPLETE WEBSITE STRUCTURE
+==================================================
+
+Build the following public pages and application routes.
+
+PUBLIC WEBSITE:
+- Homepage.
+- About Us.
+- Our Services.
+- Individual service detail pages.
+- How It Works.
+- Testimonials.
+- Contact Us.
+- Sign In.
+- Create Account.
+- Forgot Password.
+- Privacy Policy.
+- Terms and Conditions.
+
+CUSTOMER PORTAL:
+- Customer Dashboard.
+- My Profile.
+- Book a Service.
+- My Orders.
+- Individual Order Details.
+- Notifications.
+- Pickup and Collection Information.
+- Contact Support.
+
+ADMINISTRATIVE PORTAL:
+- Admin Dashboard.
+- Booking Management.
+- Order Management.
+- Customer Management.
+- Service Management.
+- Pricing Management.
+- Pickup Management.
+- Notification Management.
+- Testimonial Management.
+- Business Settings.
+- Website Content Management.
+
+Create a consistent navigation system, reusable components, clear page hierarchy, appropriate loading states, and functional links between all pages.
+
+==================================================
+3. RESPONSIVE NAVIGATION HEADER
+==================================================
+
+Create an elegant and responsive header.
+
+Desktop navigation:
+- Choice Laundry Services logo.
+- Home.
+- About Us.
+- Services.
+- How It Works.
+- Testimonials.
+- Contact.
+- Sign In.
+- Create Account.
+- Book a Service.
+
+Make "Book a Service" the primary highlighted action.
+
+Mobile navigation:
+- Compact logo.
+- Hamburger menu.
+- Smooth-opening mobile navigation panel.
+- Accessible close button.
+- Easy-to-tap links.
+- Prominent booking and WhatsApp contact actions.
+
+The navigation must work correctly on every screen size.
+
+Make the header sticky or compact on scroll, without consuming too much vertical space.
+
+When a customer signs in, replace the guest authentication links with:
+- My Dashboard.
+- My Orders.
+- Profile.
+- Sign Out.
+
+When an administrator signs in, show the authorized administrative dashboard link.
+
+Never rely on hiding navigation links as the only security measure. Enforce permissions on the server and database.
+
+==================================================
+4. HERO SECTION WITH AUTOMATIC SLIDING LAUNDRY IMAGES
+==================================================
+
+Create a stunning, full-width homepage hero section with a high-quality automatic image slider.
+
+Use three or four relevant images, including:
+- Freshly washed and folded clothes.
+- A professional ironing scene.
+- Neatly arranged white towels and bedding.
+- Clean laundry baskets or modern laundry equipment.
+
+Use high-quality images that visually match the brand.
+
+SLIDE ONE
+
+Headline:
+"Your Clothes, Our Care."
+
+Supporting text:
+"Experience fresh, clean, and beautifully finished clothes with the professional care you deserve."
+
+Primary button:
+"Book a Service"
+
+Secondary button:
+"Chat With Us"
+
+SLIDE TWO
+
+Headline:
+"Freshness You Can Feel. Quality You Can Trust."
+
+Supporting text:
+"From washing and ironing to complete laundry care, we make looking after your clothes easier."
+
+Primary button:
+"Explore Our Services"
+
+Secondary button:
+"Arrange Pickup"
+
+SLIDE THREE
+
+Headline:
+"Less Laundry. More Living."
+
+Supporting text:
+"Spend more time doing what matters while Choice Laundry Services takes care of your laundry."
+
+Primary button:
+"Get Started"
+
+Secondary button:
+"Contact Us"
+
+SLIDE FOUR
+
+Headline:
+"Every Garment Deserves the Right Care."
+
+Supporting text:
+"Choose convenient laundry solutions designed around your clothing, your schedule, and your needs."
+
+Primary button:
+"Choose Your Service"
+
+Secondary button:
+"Chat on WhatsApp"
+
+HERO DESIGN REQUIREMENTS
+
+- Use automatic sliding transitions.
+- Provide manual previous and next controls.
+- Add small slider indicators.
+- Use smooth crossfade or horizontal sliding animations.
+- Apply subtle image overlays where necessary for text contrast.
+- Keep text placement consistent.
+- Ensure typography remains readable on mobile.
+- Use responsive image sizing and optimization.
+- Respect reduced-motion preferences.
+- Avoid excessive animation.
+- Ensure buttons are fully functional.
+
+PRIMARY CTA BEHAVIOUR
+
+"Book a Service" should take visitors to the services catalogue or booking section.
+
+If a visitor chooses a service without being signed in, preserve the selected service and redirect them to registration or sign-in before completing an account-linked booking.
+
+After authentication, return them to the selected service and restore their booking progress where practical.
+
+SECONDARY CTA BEHAVIOUR
+
+"Chat With Us" opens WhatsApp with a prefilled introductory message addressed to Choice Laundry Services.
+
+"Arrange Pickup" takes the user to the booking form or pickup section.
+
+"Contact Us" opens the contact section or contact page.
+
+Do not use nonfunctional buttons.
+
+==================================================
+5. ABOUT CHOICE LAUNDRY SERVICES
+==================================================
+
+Create an attractive About Us section that explains the business and communicates trust.
+
+Section heading:
+"About Choice Laundry Services"
+
+Main headline:
+"Professional Laundry Care, Made Convenient."
+
+Suggested introduction:
+
+"At Choice Laundry Services, we believe laundry care should be simple, convenient, and dependable. We help customers care for their clothes through professional washing, ironing, and other laundry services, with personalized communication and convenient pickup coordination."
+
+VISION
+
+"To become a trusted laundry service brand recognized for excellent garment care, convenience, reliability, and outstanding customer satisfaction."
+
+MISSION
+
+"To provide convenient, professional, and dependable laundry services while treating every customer's garments with care and attention."
+
+OBJECTIVES
+
+- Deliver consistently high-quality laundry services.
+- Make booking and communication simple and convenient.
+- Provide personalized customer service.
+- Coordinate pickups and collections efficiently.
+- Build long-term customer relationships.
+- Maintain clear communication about service progress.
+- Continuously improve the customer experience.
+
+CORE VALUES
+
+- Quality.
+- Integrity.
+- Reliability.
+- Customer satisfaction.
+- Professionalism.
+- Convenience.
+- Care.
+
+Display the vision, mission, objectives, and core values in well-designed cards or a clean editorial layout.
+
+Use suitable icons and a complementary laundry image.
+
+Include a button labelled "Discover Our Services."
+
+All text must be editable by the administrator.
+
+==================================================
+6. SERVICES CATALOGUE
+==================================================
+
+Create a professional service catalogue with attractive image cards.
+
+Each card must display:
+- Service image or icon.
+- Service name.
+- Brief description.
+- Available service options.
+- Pricing information where configured.
+- A "View Details" link.
+- A "Book This Service" button.
+
+Create these service categories.
+
+SERVICE 1: COMPLETE LAUNDRY SERVICE
+
+Description:
+"A convenient laundry solution for customers who want their clothes professionally washed and finished."
+
+Possible options:
+- Wash and dry.
+- Wash, dry, and fold.
+- Wash, dry, and iron.
+- Complete laundry package.
+
+SERVICE 2: WASHING ONLY
+
+Description:
+"Professional washing for everyday garments and other suitable washable clothing."
+
+SERVICE 3: IRONING SERVICE
+
+Description:
+"Get your clothes neatly pressed and professionally finished, ready for your next outing or workday."
+
+SERVICE 4: WASHING AND IRONING
+
+Description:
+"A convenient combination of washing and ironing for clean, fresh, neatly finished garments."
+
+SERVICE 5: DRY CLEANING
+
+Description:
+"Specialist cleaning for suitable delicate garments and items that require particular care."
+
+SERVICE 6: BEDDING AND HOUSEHOLD LINEN
+
+Description:
+"Professional cleaning for suitable bedsheets, pillowcases, duvet covers, and household linen."
+
+SERVICE 7: TOWELS AND BATH LINEN
+
+Description:
+"Fresh, clean towels and bath linens professionally washed and prepared for use."
+
+SERVICE 8: SPECIAL GARMENT CARE
+
+Description:
+"Extra attention for selected delicate garments and items with specific cleaning or handling requirements."
+
+SERVICE 9: BULK AND FAMILY LAUNDRY
+
+Description:
+"A convenient option for families, larger laundry loads, and customers with multiple garments."
+
+SERVICE 10: COMMERCIAL AND BUSINESS LAUNDRY
+
+Description:
+"Enquire about laundry solutions for eligible businesses and organizations requiring regular or bulk service."
+
+The administrator must be able to add, edit, reorder, enable, or disable service categories.
+
+Do not imply that services such as dry cleaning or commercial laundry are available until the owner confirms them. Make all categories configurable.
+
+SERVICE PRICING
+
+Support these pricing methods:
+- Per item.
+- Per kilogram.
+- Per laundry load.
+- Fixed package price.
+- Custom quotation.
+- Price confirmed after inspection.
+
+Never invent actual prices.
+
+If a price is not configured, display "Contact us for pricing" or "Price confirmed after assessment."
+
+When the business requires a quotation, allow the customer to submit the booking without forcing a price entry.
+
+==================================================
+7. SERVICE DETAIL PAGES
+==================================================
+
+Each service must have an individual detail page.
+
+For example:
+- /services/complete-laundry
+- /services/washing-only
+- /services/ironing
+- /services/washing-and-ironing
+- /services/dry-cleaning
+- /services/bedding-and-linen
+
+Each page must display:
+- Service name.
+- Relevant image.
+- Description.
+- Available options.
+- Pricing method.
+- Special requirements.
+- Booking instructions.
+- Frequently asked questions where appropriate.
+- Related services.
+- Book This Service button.
+- Chat on WhatsApp button.
+
+The selected service must automatically populate the booking form when the customer clicks "Book This Service."
+
+==================================================
+8. CUSTOMER REGISTRATION AND AUTHENTICATION
+==================================================
+
+Implement secure customer authentication using Supabase Auth.
+
+Registration fields:
+- Full name.
+- Email address.
+- Phone number.
+- WhatsApp number, if different.
+- Password.
+- Password confirmation.
+
+Provide:
+- Sign up.
+- Sign in.
+- Sign out.
+- Password reset.
+- Email verification.
+- Form validation.
+- Helpful error messages.
+- Secure session management.
+- Protected customer routes.
+
+Support optional Google authentication if configured.
+
+After registration, create a corresponding customer profile linked to the authenticated user's ID.
+
+Allow the customer to save:
+- Full name.
+- Phone number.
+- WhatsApp number.
+- Default pickup address.
+- Additional pickup instructions.
+
+Customers must not need to re-enter their saved name and contact details for every booking.
+
+When a customer signs in, return them to the service or booking page they originally requested.
+
+Allow public visitors to browse the website without creating an account.
+
+Require authentication before creating an account-linked booking.
+
+Never store passwords directly in the application database. Use the authentication provider's secure password management.
+
+==================================================
+9. CUSTOMER DASHBOARD
+==================================================
+
+Create a beautiful, simple, mobile-friendly customer dashboard.
+
+Display a personalized greeting:
+
+"Welcome back, [Customer Name]!"
+
+Show summary cards:
+- Total Orders.
+- New Bookings.
+- Orders in Progress.
+- Ready for Collection.
+- Completed Orders.
+
+Include a clear quick-action area with:
+- Book a Service.
+- View My Orders.
+- Update My Profile.
+- Contact Us on WhatsApp.
+
+MY PROFILE
+
+Allow customers to:
+- View their personal details.
+- Update their name where permitted.
+- Update their phone number.
+- Update their WhatsApp number.
+- Update their default pickup address.
+- Update pickup instructions.
+- Change permitted account settings.
+
+MY ORDERS
+
+Display the customer's bookings in a responsive table or card layout.
+
+Each order should show:
+- Unique order reference.
+- Service name.
+- Booking date.
+- Order status.
+- Pickup status.
+- Expected completion date, when confirmed.
+- Quoted or confirmed price, if applicable.
+- Payment status, if applicable.
+- View Details button.
+- Contact on WhatsApp button.
+
+Allow customers to filter orders by:
+- All Orders.
+- New.
+- In Progress.
+- Ready for Collection.
+- Completed.
+- Cancelled.
+
+MY NOTIFICATIONS
+
+Display:
+- Booking confirmations.
+- Booking status updates.
+- Pickup confirmations.
+- Processing updates.
+- Ready-for-collection alerts.
+- Delivery or collection updates.
+
+Show unread notification counts.
+
+CUSTOMER SUPPORT
+
+Provide a button that opens WhatsApp with a prefilled message containing the customer's name and relevant order reference.
+
+Ensure the dashboard displays actual data from the database rather than hardcoded demonstration values.
+
+==================================================
+10. COMPLETE BOOKING SYSTEM
+==================================================
+
+This is one of the most important parts of the application.
+
+Customers must be able to select a service, provide their laundry details, submit a booking, and communicate with Choice Laundry Services through WhatsApp.
+
+When a customer clicks "Book This Service," open a dedicated booking page or a clean, step-by-step booking form.
+
+Preserve the selected service throughout the booking process.
+
+BOOKING STEP ONE: CUSTOMER INFORMATION
+
+Populate these fields using the customer's saved profile:
+- Full name.
+- Phone number.
+- WhatsApp number.
+- Pickup address.
+
+Allow the customer to update the information for that booking where necessary.
+
+BOOKING STEP TWO: SERVICE DETAILS
+
+Show the selected service and appropriate service-specific options.
+
+For ironing:
+- Type of garments.
+- Number of items.
+- Optional garment descriptions.
+- Special ironing instructions.
+
+For washing:
+- Type of garments.
+- Approximate quantity or weight.
+- Washing preferences where offered.
+- Special handling instructions.
+
+For complete laundry:
+- Selected laundry package.
+- Approximate weight or load size.
+- Types of clothing.
+- Folding or ironing preferences.
+- Special instructions.
+
+For washing and ironing:
+- Garment types.
+- Number of items or estimated weight.
+- Finishing preferences.
+
+For bedding:
+- Types of bedding.
+- Number of items.
+- Special cleaning requirements.
+
+For dry cleaning or special garment care:
+- Type of garment.
+- Number of items.
+- Fabric or care instructions if known.
+- Any specific concerns.
+
+For bulk or family laundry:
+- Estimated quantity or weight.
+- Types of garments.
+- Preferred service package.
+- Additional requirements.
+
+For commercial laundry:
+- Business or organization name, if applicable.
+- Approximate quantity.
+- Required frequency.
+- Service details.
+
+Do not display irrelevant fields for a particular service.
+
+BOOKING STEP THREE: PICKUP AND COLLECTION
+
+Include:
+- Preferred pickup date.
+- Preferred pickup time window.
+- Pickup address.
+- Pickup instructions.
+- Collection or delivery preference.
+- Optional delivery address when delivery is requested.
+
+The customer should be able to request pickup without the website claiming the pickup is already confirmed.
+
+The business owner will confirm the actual pickup date and time.
+
+BOOKING STEP FOUR: PRICE AND SUMMARY
+
+Display:
+- Selected service.
+- Service options.
+- Quantity or estimated weight.
+- Requested pickup details.
+- Special instructions.
+- Available configured pricing.
+- Quotation status where appropriate.
+
+Clearly explain when the price is an estimate and when it is confirmed.
+
+If a service requires a quotation, display:
+
+"Your final price will be confirmed by Choice Laundry Services."
+
+Do not charge customers through the booking form unless a real payment system has been configured.
+
+BOOKING STEP FIVE: CONFIRMATION
+
+Provide two actions:
+
+1. "Confirm Booking & Chat on WhatsApp"
+2. "Save Booking"
+
+The first action must validate the form, save the booking, generate an order reference, and then open WhatsApp with the personalized booking message.
+
+The second action must save the booking without opening WhatsApp and display a confirmation screen.
+
+Clearly explain that the customer may still need to contact the business to confirm pickup and pricing.
+
+Prevent duplicate bookings caused by repeated clicks or slow connections.
+
+Use proper loading states and clear error handling.
+
+==================================================
+11. AUTOMATIC PERSONALIZED WHATSAPP BOOKING
+==================================================
+
+WhatsApp integration is a core requirement.
+
+Create a reusable WhatsApp helper that builds personalized messages from the customer's account and booking details.
+
+Configure the business WhatsApp number centrally so the owner can change it without editing multiple components.
+
+Example Nigerian international number format:
+
+234XXXXXXXXXX
+
+Replace this placeholder with the real business WhatsApp number before deployment.
+
+Use the standard WhatsApp click-to-chat URL format:
+
+https://wa.me/BUSINESS_NUMBER?text=ENCODED_MESSAGE
+
+Construct the URL correctly using URL encoding.
+
+Do not include spaces, plus signs, brackets, or punctuation in the international phone number.
+
+When a customer books an ironing service, generate a message similar to this:
+
+"Hello Choice Laundry Services!
+
+I would like to book your ironing service.
+
+CUSTOMER DETAILS
+Name: [Customer Name]
+Phone: [Customer Phone]
+Order Reference: [Order Reference]
+
+SERVICE DETAILS
+Service: Ironing
+Garment Type: [Garment Type]
+Number of Items: [Quantity]
+Special Instructions: [Instructions]
+
+PICKUP DETAILS
+Preferred Date: [Pickup Date]
+Preferred Time: [Pickup Time]
+Pickup Address: [Pickup Address]
+
+Please confirm the price and pickup arrangements.
+
+Thank you."
+
+DYNAMIC MESSAGE RULES
+
+For complete laundry, include the chosen package, approximate quantity, and finishing preferences.
+
+For washing only, include the garment type and quantity or weight.
+
+For washing and ironing, include both the washing and finishing requirements.
+
+For bedding, include the types and quantities of bedding.
+
+For bulk laundry, include the estimated quantity and additional requirements.
+
+For all other services, include only the relevant service-specific information.
+
+Include the customer name and order reference in every booking message.
+
+If optional information is missing, omit that line instead of displaying "undefined" or broken values.
+
+WHATSAPP BEHAVIOUR
+
+- Open WhatsApp on mobile when available.
+- Support WhatsApp Web on desktop.
+- Prefill the message.
+- Let the customer review and send the message.
+- Do not pretend the message has been sent automatically.
+- Do not assume that opening WhatsApp means the business received the booking.
+- Save the booking to the database before opening the WhatsApp link.
+- Provide a fallback confirmation screen if the WhatsApp application cannot open.
+- Provide a separate WhatsApp contact button on order detail pages.
+
+If the business WhatsApp number is missing, display a clear setup message and allow the customer to retain their saved booking.
+
+==================================================
+12. BOOKING REFERENCES AND ORDER TRACKING
+==================================================
+
+Every booking must receive a unique, human-readable order reference.
+
+Use a format such as:
+
+CLS-20261023-0001
+
+Generate references safely on the server or in the database to avoid collisions.
+
+Every booking should store:
+- Customer ID.
+- Service ID.
+- Service name snapshot.
+- Selected options.
+- Booking date.
+- Order reference.
+- Requested pickup date and time.
+- Confirmed pickup details.
+- Garment quantities or estimated weight.
+- Customer instructions.
+- Quoted price.
+- Final price.
+- Payment status.
+- Order status.
+- Created and updated timestamps.
+
+Use the following order-status workflow:
+
+1. Booking Received.
+2. Awaiting Confirmation.
+3. Pickup Scheduled.
+4. Laundry Received.
+5. Processing.
+6. Ready for Collection.
+7. Out for Delivery, if applicable.
+8. Completed.
+9. Cancelled.
+
+Display the current status clearly in the customer dashboard.
+
+Provide a simple visual order progress indicator on the order detail page.
+
+Show timestamps for important status changes.
+
+Only an authorized administrator should be able to update operational order statuses.
+
+Do not automatically mark an order as completed because a customer opened WhatsApp.
+
+Do not automatically mark an order as ready for collection without an authorized update.
+
+Allow customers to request cancellation where the business permits it, but require the business to approve cancellation when necessary.
+
+Maintain an order status history for auditing.
+
+==================================================
+13. PICKUP AND COLLECTION MANAGEMENT
+==================================================
+
+The business coordinates pickup and collection directly with customers.
+
+Build a simple pickup management system rather than a complicated courier platform.
+
+CUSTOMER PICKUP REQUEST
+
+Customers can:
+- Request a pickup.
+- Select a preferred date.
+- Select a preferred time window.
+- Provide their address.
+- Add pickup instructions.
+- Contact the business through WhatsApp.
+
+ADMINISTRATOR PICKUP MANAGEMENT
+
+The owner can:
+- Review pickup requests.
+- Confirm a pickup date.
+- Confirm a pickup time.
+- Update the pickup address when agreed.
+- Mark a pickup as confirmed.
+- Mark laundry as received.
+- Record collection or delivery details.
+- Contact the customer through WhatsApp.
+
+Display the distinction between:
+- Pickup Requested.
+- Pickup Confirmed.
+- Laundry Received.
+- Ready for Collection.
+- Collection Confirmed.
+- Delivered, if applicable.
+
+Provide a "Discuss Pickup on WhatsApp" button for active bookings.
+
+Generate a message such as:
+
+"Hello Choice Laundry Services.
+
+I am contacting you about my laundry booking.
+
+Customer: [Customer Name]
+Order Reference: [Order Reference]
+Service: [Service Name]
+
+I would like to discuss my pickup arrangements.
+
+Thank you."
+
+==================================================
+14. LAUNDRY-READY NOTIFICATIONS
+==================================================
+
+Implement a functional in-dashboard notification system.
+
+When an administrator changes an order status to "Ready for Collection," automatically create a notification for the customer.
+
+Example:
+
+"Good news, [Customer Name]! Your laundry order [Order Reference] is ready for collection."
+
+The notification should:
+- Appear in the customer dashboard.
+- Display an unread indicator.
+- Link to the relevant order.
+- Include the update date and time.
+- Provide a WhatsApp contact action.
+
+Also support notifications for:
+- Booking received.
+- Booking confirmed.
+- Pickup scheduled.
+- Laundry received.
+- Order processing.
+- Ready for collection.
+- Out for delivery.
+- Completed orders.
+- Approved cancellations.
+
+Prevent duplicate notifications for the same status event.
+
+EMAIL NOTIFICATIONS
+
+Design the application so email notifications can be configured using a legitimate email provider.
+
+Keep email credentials on the server.
+
+WHATSAPP NOTIFICATIONS
+
+Provide an architecture that can support official WhatsApp Business Platform messaging in the future.
+
+Do not claim that automatic WhatsApp notifications are operational unless the required official API integration, credentials, permissions, and applicable message templates are configured.
+
+For the initial implementation, prioritize functional in-dashboard notifications and customer-initiated WhatsApp messages.
+
+==================================================
+15. TESTIMONIALS AND CUSTOMER REVIEWS
+==================================================
+
+Create a beautiful testimonials section.
+
+Headline:
+
+"What Our Customers Say."
+
+Supporting text:
+
+"We value every customer and are committed to making laundry care a better experience."
+
+Display testimonial cards containing:
+- Customer display name.
+- Customer feedback.
+- Rating, where provided.
+- Date, where appropriate.
+
+Use an elegant responsive grid or carousel.
+
+Do not fabricate real customer testimonials or display invented ratings as genuine reviews.
+
+Use clearly labelled development placeholders until the business owner adds authentic reviews.
+
+Allow administrators to:
+- Add testimonials.
+- Edit testimonials.
+- Approve testimonials.
+- Publish or unpublish testimonials.
+- Remove testimonials when necessary.
+
+If customers can submit reviews through the website, make the review process explicit and prevent unauthorized administrative actions.
+
+==================================================
+16. HOW IT WORKS SECTION
+==================================================
+
+Create a clear four-step section.
+
+STEP 1: CHOOSE YOUR SERVICE
+
+"Explore our services and select the laundry care you need."
+
+STEP 2: BOOK AND CHAT
+
+"Submit your booking details and connect with us on WhatsApp to discuss your service and pickup arrangements."
+
+STEP 3: WE CARE FOR YOUR LAUNDRY
+
+"Our team receives your garments and processes your order with care."
+
+STEP 4: GET NOTIFIED
+
+"Follow your order status and receive an update when your laundry is ready for collection or delivery."
+
+Use attractive icons, numbered steps, subtle animations, and a responsive layout.
+
+Add a "Book Your Service" CTA below the steps.
+
+==================================================
+17. WHY CHOOSE CHOICE LAUNDRY SERVICES
+==================================================
+
+Create a visually engaging benefits section.
+
+Include:
+- Convenient booking.
+- Direct WhatsApp communication.
+- Personalized service.
+- Clear order tracking.
+- Pickup coordination.
+- Order status notifications.
+- Careful handling of garments.
+- Convenient customer account management.
+
+Use clean icons and concise descriptions.
+
+Do not claim certifications, guarantees, delivery times, or customer ratings that the business has not verified.
+
+==================================================
+18. FREQUENTLY ASKED QUESTIONS
+==================================================
+
+Create an accessible accordion-based FAQ section.
+
+Include editable questions such as:
+
+- How do I book a laundry service?
+- What laundry services do you offer?
+- How do I arrange pickup?
+- How will I know when my laundry is ready?
+- Can I track my order?
+- How is the laundry price determined?
+- Can I contact the business through WhatsApp?
+- Can I cancel or change a booking?
+- How do I collect my laundry?
+- Do you offer delivery?
+- How can I contact customer support?
+
+Answers must reflect the actual business policies.
+
+Where a policy has not been configured, use neutral wording and direct customers to contact the business.
+
+Allow the administrator to edit FAQ questions and answers.
+
+==================================================
+19. CONTACT US AND FOOTER
+==================================================
+
+Create a professional contact section.
+
+Include:
+- Business phone number.
+- WhatsApp button.
+- Business email.
+- Business address, if supplied.
+- Operating hours, if supplied.
+- Configured social media links.
+
+Provide a contact form containing:
+- Full name.
+- Email.
+- Phone number, optional.
+- Subject.
+- Message.
+
+Validate the form and store enquiries in the database or deliver them through a configured service.
+
+Display success and error states.
+
+Do not expose customer contact information publicly.
+
+FOOTER
+
+Include:
+- Choice Laundry Services logo.
+- Short business description.
+- Navigation links.
+- Service links.
+- Customer account links.
+- Contact details.
+- Privacy Policy.
+- Terms and Conditions.
+- Social media links, if configured.
+- Copyright notice.
+
+Use the correct current year dynamically.
+
+==================================================
+20. ADMINISTRATIVE DASHBOARD
+==================================================
+
+Create a protected administrative dashboard for the owner of Choice Laundry Services.
+
+The admin dashboard must be functional and connected to the database.
+
+ADMIN OVERVIEW
+
+Display summary cards for:
+- Total bookings.
+- New bookings.
+- Awaiting confirmation.
+- Pickup scheduled.
+- Orders being processed.
+- Ready for collection.
+- Completed orders.
+- Cancelled bookings.
+- Outstanding balances, if payment tracking is enabled.
+
+Display recent bookings and upcoming requested pickups.
+
+Include search, filters, pagination, and useful sorting options.
+
+BOOKING MANAGEMENT
+
+Allow authorized administrators to:
+- View all bookings.
+- Search by order reference.
+- Search by customer name.
+- Filter by service.
+- Filter by order status.
+- Filter by booking date.
+- Open booking details.
+- Confirm or reject bookings.
+- Update order status.
+- Add internal notes.
+- Confirm pickup arrangements.
+- Set expected completion dates.
+- Record actual quantities or weight.
+- Set a quoted price.
+- Set a final price.
+- Update payment status.
+- Contact customers through WhatsApp.
+
+CUSTOMER MANAGEMENT
+
+Allow administrators to:
+- View customer records.
+- Search customers.
+- View relevant contact details.
+- View customer order history.
+- Open a customer's active bookings.
+- Contact a customer through WhatsApp when authorized.
+
+SERVICE MANAGEMENT
+
+Allow administrators to:
+- Create services.
+- Edit services.
+- Upload service images.
+- Update service descriptions.
+- Configure pricing methods.
+- Update prices.
+- Mark services as requiring a quotation.
+- Enable or disable services.
+- Change service display order.
+
+PICKUP MANAGEMENT
+
+Allow administrators to:
+- View pickup requests.
+- Confirm pickup dates and times.
+- Record pickup status.
+- View the pickup address associated with an order.
+- Record when laundry is received.
+- Record collection or delivery information.
+- Contact customers about pickup arrangements.
+
+TESTIMONIAL MANAGEMENT
+
+Allow administrators to:
+- Add testimonials.
+- Edit testimonials.
+- Approve reviews.
+- Publish or unpublish reviews.
+
+BUSINESS SETTINGS
+
+Allow administrators to update:
+- Business name.
+- Business logo.
+- Slogan.
+- WhatsApp number.
+- Phone number.
+- Business email.
+- Business address.
+- Operating hours.
+- Brand colours.
+- Homepage text.
+- Vision and mission.
+- About Us content.
+- Service catalogue.
+- Social media links.
+- Contact details.
+- FAQ content.
+
+Do not require editing source code to change routine business information.
+
+==================================================
+21. PRICING, PAYMENTS, AND FINANCIAL RECORDS
+==================================================
+
+Provide configurable pricing and basic order payment tracking.
+
+Support pricing methods:
+- Per item.
+- Per kilogram.
+- Per load.
+- Fixed package.
+- Custom quotation.
+
+Do not hardcode invented prices.
+
+Allow administrators to record:
+- Quoted price.
+- Confirmed price.
+- Final price.
+- Amount paid.
+- Outstanding balance.
+- Payment method.
+- Payment date.
+- Payment status.
+- Internal payment notes.
+
+Calculate outstanding balance from recorded amounts, with appropriate validation.
+
+Support payment states:
+- Pending.
+- Partially Paid.
+- Paid.
+- Refunded, where applicable.
+
+The initial application may use manually confirmed payment records.
+
+Do not claim to process or verify online payments unless a real payment gateway is integrated.
+
+If online payments are added later, implement server-side payment verification and secure webhook handling.
+
+==================================================
+22. DATABASE AND BACKEND ARCHITECTURE
+==================================================
+
+Use Supabase for:
+- Authentication.
+- PostgreSQL database.
+- Customer profiles.
+- Bookings.
+- Service catalogue.
+- Notifications.
+- Testimonials.
+- Business settings.
+- Administrative data.
+
+Create structured database tables.
+
+PROFILES
+- id.
+- full_name.
+- email.
+- phone_number.
+- whatsapp_number.
+- default_pickup_address.
+- default_pickup_instructions.
+- role.
+- created_at.
+- updated_at.
+
+SERVICES
+- id.
+- name.
+- slug.
+- description.
+- category.
+- image_url.
+- pricing_method.
+- base_price.
+- is_active.
+- display_order.
+- created_at.
+- updated_at.
+
+BOOKINGS
+- id.
+- order_reference.
+- customer_id.
+- service_id.
+- service_name_snapshot.
+- service_details.
+- garment_quantity.
+- estimated_weight.
+- pickup_address.
+- pickup_instructions.
+- requested_pickup_date.
+- requested_pickup_time.
+- confirmed_pickup_date.
+- confirmed_pickup_time.
+- expected_completion_date.
+- collection_or_delivery_preference.
+- delivery_address, if applicable.
+- special_instructions.
+- quoted_price.
+- final_price.
+- amount_paid.
+- payment_status.
+- order_status.
+- created_at.
+- updated_at.
+
+ORDER STATUS HISTORY
+- id.
+- booking_id.
+- previous_status.
+- new_status.
+- changed_by.
+- note.
+- created_at.
+
+NOTIFICATIONS
+- id.
+- customer_id.
+- booking_id.
+- title.
+- message.
+- notification_type.
+- is_read.
+- created_at.
+
+TESTIMONIALS
+- id.
+- customer_name.
+- content.
+- rating.
+- is_approved.
+- created_at.
+- updated_at.
+
+BUSINESS SETTINGS
+- id.
+- business_name.
+- logo_url.
+- slogan.
+- whatsapp_number.
+- phone_number.
+- email.
+- address.
+- operating_hours.
+- vision.
+- mission.
+- objectives.
+- brand_settings.
+- updated_at.
+
+CONTACT ENQUIRIES
+- id.
+- name.
+- email.
+- phone_number.
+- subject.
+- message.
+- status.
+- created_at.
+
+FAQ ITEMS
+- id.
+- question.
+- answer.
+- display_order.
+- is_active.
+- created_at.
+- updated_at.
+
+Adapt the schema as required and add foreign keys, indexes, constraints, and migration files.
+
+Use a reliable approach to generate unique order references.
+
+Use server-side logic or database functions for important state transitions and other operations requiring consistent behavior.
+
+Store historical service information with each booking so later changes to a service name or price do not rewrite the original booking record.
+
+==================================================
+23. SECURITY AND ACCESS CONTROL
+==================================================
+
+Security is mandatory.
+
+Implement Supabase Row Level Security policies and appropriate server-side authorization.
+
+CUSTOMER PERMISSIONS
+
+Customers may:
+- Read their own profile.
+- Update permitted profile fields.
+- Create their own bookings.
+- Read their own bookings.
+- Read their own notifications.
+- Mark their own notifications as read.
+
+Customers must not:
+- Read another customer's profile.
+- Read another customer's bookings.
+- Read another customer's notifications.
+- Change their role to administrator.
+- Set unauthorized order statuses.
+- Modify administrative settings.
+- Edit prices or payment records outside permitted operations.
+
+ADMINISTRATOR PERMISSIONS
+
+Only authorized administrators may:
+- View all bookings.
+- Update operational order statuses.
+- Manage customer records where authorized.
+- Manage service categories and prices.
+- Manage testimonials.
+- Update business settings.
+- Manage administrative data.
+
+Assign administrator roles through a secure server-side process or trusted database administration process.
+
+Never let public registration assign administrative privileges.
+
+Do not rely solely on client-side route guards.
+
+Keep privileged database keys and service-role credentials on the server.
+
+Never expose secrets through NEXT_PUBLIC environment variables.
+
+Validate all incoming data on the server.
+
+Use safe database queries and proper error handling.
+
+Protect authentication and administrative actions against unauthorized access.
+
+==================================================
+24. TECHNOLOGY STACK
+==================================================
+
+Use the following recommended stack:
+
+Frontend:
+- Next.js.
+- TypeScript.
+- React.
+- Tailwind CSS.
+- Accessible reusable UI components.
+- A consistent icon library.
+
+Backend:
+- Next.js server-side functionality.
+- Supabase Auth.
+- Supabase PostgreSQL.
+- Supabase Row Level Security.
+- Server-side validation.
+- Appropriate server actions or API routes.
+
+Hosting:
+- Vercel.
+
+Additional integrations:
+- WhatsApp click-to-chat.
+- Optional email notification provider.
+- Optional official WhatsApp Business Platform integration in a future phase.
+- Optional payment gateway in a future phase.
+
+Use the Next.js App Router.
+
+Use reusable components and a maintainable project structure.
+
+Keep database logic, validation, WhatsApp helpers, configuration, and user interface components separated appropriately.
+
+Use the current stable and supported APIs of the chosen dependencies.
+
+==================================================
+25. REQUIRED ROUTES
+==================================================
+
+Implement these routes as appropriate:
+
+PUBLIC
+- /
+- /about
+- /services
+- /services/[slug]
+- /how-it-works
+- /contact
+- /privacy
+- /terms
+
+AUTHENTICATION
+- /auth/sign-in
+- /auth/sign-up
+- /auth/forgot-password
+- /auth/callback, where required
+
+CUSTOMER
+- /dashboard
+- /dashboard/profile
+- /dashboard/orders
+- /dashboard/orders/[id]
+- /dashboard/notifications
+- /book
+- /book/[serviceSlug]
+
+ADMIN
+- /admin
+- /admin/bookings
+- /admin/bookings/[id]
+- /admin/customers
+- /admin/services
+- /admin/testimonials
+- /admin/settings
+- /admin/enquiries
+- /admin/faq
+
+Use a coherent route structure and protect all private routes.
+
+==================================================
+26. PERFORMANCE, ACCESSIBILITY, AND SEO
+==================================================
+
+Optimize the website for performance and usability.
+
+Implement:
+- Responsive layouts.
+- Optimized image loading.
+- Lazy loading where appropriate.
+- Proper image alt text.
+- Semantic HTML.
+- Accessible forms.
+- Keyboard navigation.
+- Visible focus states.
+- Good colour contrast.
+- Reduced-motion support.
+- Useful loading indicators.
+- Clear validation errors.
+- Helpful empty states.
+- Appropriate error pages.
+- Fast initial page loading.
+
+SEO requirements:
+- Page titles.
+- Meta descriptions.
+- Open Graph metadata.
+- Sitemap.
+- Robots configuration.
+- Canonical URLs where appropriate.
+- Local business structured data only using accurate, supplied business details.
+- Search-engine-friendly public pages.
+
+Prevent private customer dashboards and sensitive account information from being indexed.
+
+Avoid loading unnecessary libraries or oversized assets.
+
+==================================================
+27. VERCEL DEPLOYMENT REQUIREMENTS
+==================================================
+
+Prepare the application for deployment to Vercel.
+
+Provide:
+- Complete source code.
+- Working package.json.
+- Next.js configuration.
+- Tailwind configuration.
+- All required page and component files.
+- Database migration scripts.
+- Supabase configuration instructions.
+- Environment variable documentation.
+- A .env.example file.
+- Authentication configuration instructions.
+- Secure administrator setup instructions.
+- WhatsApp number configuration.
+- Deployment instructions.
+- Custom domain configuration instructions.
+- Production testing instructions.
+
+Document the required environment variables, such as:
+
+NEXT_PUBLIC_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY
+SUPABASE_SERVICE_ROLE_KEY
+
+Only include the variables actually required by the implemented application.
+
+Keep service-role keys private and server-side.
+
+Provide the public business configuration separately from secret credentials.
+
+Do not commit real secrets to source control.
+
+Explain how to:
+1. Create a Supabase project.
+2. Configure the database.
+3. Run migrations.
+4. Enable authentication.
+5. Configure authentication redirect URLs.
+6. Create the initial administrator securely.
+7. Configure the Choice Laundry Services WhatsApp number.
+8. Configure environment variables in Vercel.
+9. Connect the code repository to Vercel.
+10. Deploy the application.
+11. Test authentication and bookings in production.
+12. Connect a custom domain.
+
+Do not claim deployment is complete unless the application has actually been deployed.
+
+==================================================
+28. TESTING AND ACCEPTANCE CRITERIA
+==================================================
+
+Before declaring the application complete, verify the following.
+
+WEBSITE
+1. The homepage loads correctly.
+2. The hero slider transitions correctly.
+3. Slider controls work.
+4. Navigation works on mobile and desktop.
+5. Every CTA performs its intended action.
+6. Service cards display the correct information.
+7. Public pages are responsive.
+
+AUTHENTICATION
+8. Customers can register.
+9. Customers can sign in.
+10. Customers can sign out.
+11. Password recovery works.
+12. Customer sessions are handled securely.
+13. Protected routes require authentication.
+
+BOOKING
+14. Customers can select a service.
+15. The booking form adapts to the selected service.
+16. Customer details populate from the authenticated profile.
+17. Customers can enter garment details and pickup preferences.
+18. The form validates required information.
+19. Bookings are saved in the database.
+20. Each booking receives a unique order reference.
+21. Duplicate booking submissions are prevented.
+22. WhatsApp opens with the correct personalized message.
+23. The message contains the correct service and booking information.
+24. The customer can review and send the WhatsApp message.
+25. The booking remains recorded if WhatsApp cannot open.
+
+CUSTOMER DASHBOARD
+26. Customers can view their own orders.
+27. Customers can view order details.
+28. Customers can see status updates.
+29. Customers can update permitted profile details.
+30. Customers can view and read their notifications.
+
+ADMINISTRATION
+31. Administrators can access the admin dashboard.
+32. Administrators can search and filter bookings.
+33. Administrators can update order statuses.
+34. Administrators can manage service categories.
+35. Administrators can manage configured prices.
+36. Administrators can confirm pickup arrangements.
+37. Ready-for-collection updates generate customer notifications.
+38. Administrators can manage business settings.
+39. Administrators can manage testimonials and FAQs.
+
+SECURITY
+40. Customers cannot access another customer's private data.
+41. Customers cannot grant themselves administrator access.
+42. Unauthorized users cannot perform administrative actions.
+43. Secret credentials are not exposed to the frontend.
+44. Database security policies are active and tested.
+
+DEPLOYMENT
+45. The production build completes successfully.
+46. Environment variables are documented.
+47. Database migrations are included.
+48. All essential links and buttons work.
+49. The application works on mobile and desktop.
+50. No critical console errors, broken routes, or fake data dependencies remain.
+
+==================================================
+29. DEVELOPMENT EXECUTION PLAN
+==================================================
+
+Build the application in logical phases.
+
+PHASE ONE
+Create the design system, responsive header, hero slider, homepage, About Us, service catalogue, testimonials, FAQ, contact section, and footer.
+
+PHASE TWO
+Set up Supabase, database migrations, authentication, customer profiles, and secure role management.
+
+PHASE THREE
+Implement the service-specific booking forms, database booking records, unique order references, and personalized WhatsApp messages.
+
+PHASE FOUR
+Build the customer dashboard, order history, status tracking, and notifications.
+
+PHASE FIVE
+Build the administrator dashboard, booking management, pricing management, service management, pickup coordination, and business settings.
+
+PHASE SIX
+Implement security policies, form validation, error handling, accessibility, performance optimization, and SEO.
+
+PHASE SEVEN
+Run the acceptance tests, fix problems, verify the production build, and document Vercel deployment.
+
+Do not skip backend functionality or replace real database operations with static examples.
+
+If the AI development environment has implementation limits, complete the project in clearly defined stages while maintaining one coherent codebase.
+
+==================================================
+30. FINAL INSTRUCTION
+==================================================
+
+Deliver a complete and functional web application for CHOICE LAUNDRY SERVICES.
+
+The result must combine a premium laundry website with customer accounts, personalized booking, WhatsApp communication, order management, pickup coordination, notifications, and a secure administrative dashboard.
+
+Prioritize these five business-critical features:
+
+1. A beautiful, modern, responsive website that builds customer confidence.
+2. A customer account system that remembers customer information.
+3. A service-specific booking system that records orders and generates unique references.
+4. Personalized WhatsApp booking messages that make it easy for customers to communicate directly with the business.
+5. An administrative system that lets the owner manage bookings, track laundry progress, coordinate pickup, and notify customers when their laundry is ready.
+
+Use CHOICE LAUNDRY SERVICES consistently as the business name.
+
+Make business details, service categories, pricing, imagery, and website content configurable.
+
+Build the actual application, verify the implemented functionality, and provide the necessary setup and deployment instructions.
+
+The final product should look premium, feel simple to use, and help Choice Laundry Services manage real customer bookings efficiently.

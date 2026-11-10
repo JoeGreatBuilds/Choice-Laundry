@@ -1,0 +1,6 @@
+{
+  "name": "Choice Laundry Services",
+  "description": "Premium laundry care, booking system, order tracking, WhatsApp integration, and management portal for Choice Laundry Services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
