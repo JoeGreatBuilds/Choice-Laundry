@@ -41,7 +41,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ settings, onNavigate }) 
       secondaryButton: 'Chat on WhatsApp',
       secondaryAction: handleWhatsAppChat,
       secondaryIcon: 'whatsapp',
-      image: '/src/assets/images/choice_female_folding_1794322101538.jpg',
+      image: '/src/assets/choice_female_folding_1794322101538.jpg',
       alt: 'Choice Laundry specialist wearing branded vest folding clean garments',
     },
     {
@@ -53,7 +53,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ settings, onNavigate }) 
       secondaryButton: 'Chat on WhatsApp',
       secondaryAction: handleWhatsAppChat,
       secondaryIcon: 'whatsapp',
-      image: '/src/assets/images/choice_male_ironing_1794322103676.jpg',
+      image: '/src/assets/choice_male_ironing_1794322103676.jpg',
       alt: 'Choice Laundry worker in customized Choice Laundry apron steam pressing crisp shirt',
     },
     {
@@ -65,7 +65,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ settings, onNavigate }) 
       secondaryButton: 'WhatsApp Us',
       secondaryAction: handleWhatsAppChat,
       secondaryIcon: 'whatsapp',
-      image: '/src/assets/images/choice_laundry_team_1794322118534.jpg',
+      image: '/src/assets/choice_laundry_team_1794322118534.jpg',
       alt: 'Choice Laundry staff team wearing official branded aprons in modern laundry facility',
     },
     {
@@ -77,7 +77,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ settings, onNavigate }) 
       secondaryButton: 'Chat on WhatsApp',
       secondaryAction: handleWhatsAppChat,
       secondaryIcon: 'whatsapp',
-      image: '/src/assets/images/choice_clean_hero_slide4_1794323144854.jpg',
+      image: '/src/assets/choice_clean_hero_slide4_1794323144854.jpg',
       alt: 'Choice Laundry specialist in sky blue polo holding suits in clean boutique entrance',
     },
   ];
